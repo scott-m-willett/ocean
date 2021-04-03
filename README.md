@@ -32,7 +32,9 @@ Help
 ----
 
 ocean -h
+
 ocean --help
+
 ocean
 
 Create Droplets
@@ -41,7 +43,9 @@ Create Droplets
 You can automatically create one or many droplets. Below are all valid commands.
 
 ocean --create
+
 ocean --create --number 10
+
 ocean --create --number 1
 
 Other options for create are listed in the command help (ocean -h).
