@@ -54,12 +54,11 @@ class OceanDependency:
         # If the RSA key doesn't exist, create it
         if check_ssh == True:
             if os.path.isfile(key_file) != True:
-                os.system("ssh-keygen -b 2048 -t rsa -f " + key_file + " -q -N ")
-        
-        # Set the member value ssh_key to the value of this file
-        ssh_file = open(key_file)
-        self.ssh_key = ssh_file.read().strip()
-        ssh_file.close()
+                os.system("ssh-keygen -b 2048 -t rsa -f " + key_file + " -q -N ") 
+            # Set the member value ssh_key to the value of this file
+            ssh_file = open(key_file)
+            self.ssh_key = ssh_file.read().strip()
+            ssh_file.close()
         
         if check_ssh == True:
             # Upload the SSH key to digital ocean if it isn't there already
@@ -86,9 +85,3 @@ class OceanDependency:
         limit = self.get_droplet_limit()
         number = (current_number + create_number)
         return (number <= limit)
-        
-    # Set up an "Ocean" project for the Droplets and use it
-    # def setup_project(self)
-    
-    
-    # Create account?

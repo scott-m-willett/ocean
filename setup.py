@@ -7,21 +7,18 @@ with open("README.md", "r") as fh:
  
 setuptools.setup(
     name='ocean',  
-    version='0.1',
+    version='0.2',
     author="Scott Willett",
     author_email="swillett@protonmail.com",
     description="Automates many tasks for pentesting with the Digital Ocean Cloud Platform.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/scott-m-willett/Ocean",
-    packages=["ocean"],
+    packages=["ocean","ocean.classes"],
     entry_points = {
-        "console_scripts": ['aogl = aogl.aogl:main']
+        "console_scripts": ['ocean = ocean:main']
     },
-    install_requires=[
-        "digitalocean",
-        "paramiko"
-    ],
+    install_requires=[],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
