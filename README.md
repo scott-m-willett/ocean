@@ -3,7 +3,7 @@ Ocean
 
 Pentesting automations with the Digital Ocean Cloud Platform and Droplets (VMs).
 
-It provides a way to easily provision penetration testing VMs in digital ocean for various purposes, for example:
+It provides a way to easily provision penetration testing VMs in digital ocean for various purposes in an efficient and economical way, for example:
 - Use hack tools
 - Set up proxies for use with proxychains
 - Tunnel traffic through a droplet
