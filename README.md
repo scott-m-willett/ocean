@@ -50,7 +50,7 @@ ToDo / Bugs
 
 16. Better output from the --cmd command (try printing the host to stderr so stdout can be redirected, or provide text so output can be cut and grepped)
 
-17. Look at a --deploy switch to upload a local or remote image, and set it as the active image automatically
+17. Look at a --deploy switch to upload a local or remote image, and set it as the active image automatically 
 
 18. Look at creating profile scripts to orchestrate scenarios (eg: setting up 10 socks5 proxies, create a scan box and a rshell handler)
 
@@ -65,6 +65,8 @@ ToDo / Bugs
 23. More detail and examples of commands
 
 24. ASCII art banner for help - gotta do it (does argsparse provide options for this?)
+
+25. Look at a feature to assist in creating a new account and auto setting the env var (if possible) (--new-account?)
 
 
 Setup
