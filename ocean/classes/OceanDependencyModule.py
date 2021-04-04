@@ -43,7 +43,6 @@ class OceanDependency:
         else:
             return True
             
-    
     # Gets the SSH key for the system. It is created if it doesn't exist. It is uploaded to DigitalOcean if it doesn't exist there too.
     def set_ssh_key(self, check_ssh):
         

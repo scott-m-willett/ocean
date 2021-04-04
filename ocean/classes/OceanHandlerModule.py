@@ -30,8 +30,8 @@ class OceanHandler:
         self.main_parser.add_argument('--list', choices=['droplets', 'proxychains', 'regions', 'sizes'], help='List information.')
         self.main_parser.add_argument('--create', action='store_true', help='Create Droplets')
         self.main_parser.add_argument('--name', help='Provide an optional name for the Droplet. Default will be the type followed by a sequential number (eg: kali2) if unspecified.')
-        self.main_parser.add_argument('--number', type=int, default=1, help='The number of Droplets to create, account droplet_limits permitting. One Droplet is created if unspecified.')
-        self.main_parser.add_argument('--region', help='The region to create the Droplet. A random region is select if unspecified.')
+        self.main_parser.add_argument('--number', type=int, default=1, help='The number of Droplets to create, account droplet limits permitting (default: 10 droplets per account). One Droplet is created if unspecified.')
+        self.main_parser.add_argument('--region', help='The region to create the Droplet. A random region is selected if unspecified.')
         self.main_parser.add_argument('--size', default="s-1vcpu-1gb",help='Droplet sizing and spec options. Default is "s-1vcpu-1gb" (smallest and cheapest) if unspecified.')  
 
         # Parse the arguments
