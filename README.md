@@ -79,8 +79,7 @@ I highly recommend creating a dedicated account for your pentesting tasks. DO NO
 
 Get your API key from your account page and put it into an environment variable on your machine (digitalocean_token).
 
-You can build your own custom image and upload with a process such as this: https://medium.com/@hackthebox/how-to-deploy-a-kali-linux-distribution-in-digital-ocean-cloud-c556edf17741
-My own instructions on this to come.
+You can build your own custom image and upload with a process such as this: https://link.medium.com/WIVF1rNscfb 
 
 For custom images, you need to put the ID of the machine into an environment variable (digitalocean_image). You can use "ocean --image #image_name#" to retrieve this from your account.
 You can use a generic image such as ubuntu-20-04-x64 by simply putting that value into the environment variable (digitalocean_image)
