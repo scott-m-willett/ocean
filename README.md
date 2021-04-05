@@ -153,3 +153,14 @@ ocean --list regions
 This will show all available sizing options for droplets. The default sizes used for ocean is "s-1vcpu-1gb" (smallest and cheapest).
 
 ocean --list sizes
+
+Use Cases
+---------
+
+Provision 10 droplets, make them a proxy server (with our custom image), and import the server list into proxy chains
+
+ocean --create --number 10
+
+ocean --cmd "systemctl start danted"
+
+ocean --list proxychains >> /etc/proxychains.conf
